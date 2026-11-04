@@ -1,0 +1,29 @@
+/* ---------- 8 · Agua ---------- */
+.s8 .title{max-width:calc(var(--u)*72)}
+.s8__grid{flex:1;display:grid;grid-template-columns:1fr calc(var(--u)*21);gap:calc(var(--u)*4);min-height:0}
+.s8__main{display:flex;flex-direction:column;gap:calc(var(--u)*1.5);min-height:0}
+.s8__side{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:calc(var(--u)*1.4);min-height:0}
+.s8 .orb{--d:calc(var(--u)*19)}
+.s8__cap{font-size:calc(var(--u)*.92);color:var(--mist);text-align:center;line-height:1.4}
+.s8__cap strong{color:var(--ice);font-weight:700}
+.chain{position:relative;display:grid;grid-template-columns:repeat(5,1fr)}
+.chain::before{content:"";position:absolute;left:10%;right:10%;top:calc(var(--u)*1.6);height:2px;background:linear-gradient(90deg,transparent,var(--agua) 12%,var(--agua) 88%,transparent);opacity:.8}
+.step{position:relative;display:grid;justify-items:center;align-content:start;text-align:center;gap:calc(var(--u)*.4)}
+.step .ico{width:calc(var(--u)*3.2);height:calc(var(--u)*3.2);background-color:var(--void)}
+.step strong{font-size:calc(var(--u)*.98);font-weight:700}
+.step small{font-size:calc(var(--u)*.8);color:var(--mist);line-height:1.3;max-width:calc(var(--u)*10)}
+.chart{--cut:calc(var(--u)*1.5);padding:calc(var(--u)*1.3) calc(var(--u)*1.6) calc(var(--u)*.9);display:grid;grid-template-rows:auto 1fr;gap:calc(var(--u)*.4);flex:1;min-height:0}
+.chart__top{display:flex;justify-content:space-between;align-items:flex-start;gap:calc(var(--u)*1.5)}
+.chart svg{width:100%;height:100%;min-height:0;display:block;overflow:visible}
+.chart text{font-family:var(--font);font-size:calc(var(--u)*.74);fill:var(--dim)}
+.chart .grid line{stroke:rgba(122,163,255,.14)}
+.chart .night{fill:rgba(39,180,255,.1)}
+.chart .area{fill:url(#aguaFill)}
+.chart .line{fill:none;stroke:var(--agua);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px rgba(39,180,255,.6))}
+.chart .pt{fill:var(--void);stroke:var(--agua);stroke-width:2.5;transition:stroke .4s}
+.chart .pt-label{font-size:calc(var(--u)*.84);font-weight:700;fill:var(--ice)}
+.chart .lead{stroke:rgba(243,247,255,.5)}
+.chart.is-leak .lead{stroke:rgba(255,79,110,.8)}
+.chart.is-leak .pt{stroke:var(--alert)}
+.chart.is-leak .pt-label{fill:var(--alert)}
+.s8 .fact{border-top-color:color-mix(in oklab,var(--agua) 60%,transparent)}

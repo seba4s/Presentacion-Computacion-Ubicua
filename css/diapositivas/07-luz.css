@@ -1,0 +1,23 @@
+/* ---------- 7 · Luz ---------- */
+.s7 .title{max-width:calc(var(--u)*50)}
+.s7__grid{flex:1;display:grid;grid-template-columns:1fr calc(var(--u)*27);gap:calc(var(--u)*5);min-height:0}
+.s7__left{display:flex;flex-direction:column;gap:calc(var(--u)*1.6);justify-content:center}
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*1.1) calc(var(--u)*2)}
+.cap-i{display:flex;align-items:center;gap:calc(var(--u)*1);font-size:calc(var(--u)*1)}
+.cap-i .ico{width:calc(var(--u)*2.7);height:calc(var(--u)*2.7);font-size:calc(var(--u)*1.15)}
+.bal{--cut:calc(var(--u)*1.6);padding:calc(var(--u)*1.4) calc(var(--u)*1.8);display:grid;gap:calc(var(--u)*1)}
+.bal__top{display:flex;justify-content:space-between;align-items:center;gap:1em}
+.bal__nums{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u)*1.2)}
+.bal__nums span{display:block;font-size:calc(var(--u)*.82);color:var(--mist)}
+.bal__nums b{display:block;font-weight:800;font-size:calc(var(--u)*2.3);line-height:1.08;font-variant-numeric:tabular-nums;transition:color .4s}
+.houses{display:flex;gap:calc(var(--u)*.55);align-items:flex-end;color:var(--volt-2);font-size:calc(var(--u)*1.6)}
+.houses .ghost{color:var(--alert);opacity:0;transform:translateY(4px);transition:opacity .5s,transform .5s}
+.bal.is-fraud .ghost{opacity:1;transform:none}
+.bal.is-fraud .js-diff,.bal.is-fraud .js-tr{color:var(--alert)}
+.bal__msg{font-size:calc(var(--u)*.92);color:var(--mist);min-height:2.8em}
+.stats-col{position:relative;display:flex;flex-direction:column;gap:calc(var(--u)*1.3);justify-content:flex-end}
+.s7__obj{position:absolute;z-index:0;right:calc(var(--u)*1.5);top:calc(var(--u)*-9);width:calc(var(--u)*14.5);transform:translate3d(0,calc(var(--p) * -5vh),0)}
+.stat{--cut:calc(var(--u)*1.4);z-index:1;padding:calc(var(--u)*1.5) calc(var(--u)*1.9)}
+.stat b{display:block;font-weight:800;font-size:calc(var(--u)*3.6);line-height:.98;color:var(--c,var(--ice));font-variant-numeric:lining-nums tabular-nums}
+.stat span{display:block;margin-top:calc(var(--u)*.6);font-size:calc(var(--u)*.98);line-height:1.4}
+.stat-note{font-size:calc(var(--u)*.92);color:var(--mist);line-height:1.45;padding:0 calc(var(--u)*.4)}

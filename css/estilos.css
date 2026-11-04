@@ -1,0 +1,24 @@
+/* Punto de entrada de los estilos. El orden importa: lo de abajo puede ajustar lo de arriba. */
+@import "fuentes.css";
+@import "base.css";
+@import "componentes.css";
+@import "interfaz.css";
+
+@import "diapositivas/01-portada.css";
+@import "diapositivas/02-conceptos.css";
+@import "diapositivas/03-osi-tcp-ip.css";
+@import "diapositivas/04-medios.css";
+@import "diapositivas/05-wan.css";
+@import "diapositivas/06-norma.css";
+@import "diapositivas/07-luz.css";
+@import "diapositivas/08-agua.css";
+@import "diapositivas/09-gas.css";
+@import "diapositivas/10-comparativo.css";
+@import "diapositivas/11-ia.css";
+@import "diapositivas/12-conexiones.css";
+@import "diapositivas/13-propuesta.css";
+@import "diapositivas/14-retos.css";
+@import "diapositivas/15-cierre.css";
+
+@import "responsive.css";
+@import "movimiento.css";

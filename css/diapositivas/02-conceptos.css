@@ -1,0 +1,33 @@
+/* ---------- 2 · Conceptos ---------- */
+.s2 .title{max-width:calc(var(--u)*52)}
+.s2__grid{flex:1;display:grid;grid-template-columns:1fr calc(var(--u)*33);gap:calc(var(--u)*5);min-height:0}
+.terms{display:flex;flex-direction:column;justify-content:center}
+.term{display:grid;grid-template-columns:calc(var(--u)*3.2) calc(var(--u)*13) 1fr;column-gap:calc(var(--u)*1.6);align-items:center;padding:calc(var(--u)*1.8) 0;border-top:1px solid var(--line)}
+.term:last-child{border-bottom:1px solid var(--line)}
+.term .ico{width:calc(var(--u)*3.2);height:calc(var(--u)*3.2)}
+.term dt{font-weight:700;font-size:calc(var(--u)*1.9);line-height:1.05}
+.term dd{line-height:1.42}
+.term .tg{display:block;margin-top:.35em;font-size:calc(var(--u)*.86);color:var(--cyan);font-weight:600}
+.s2__fig{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:calc(var(--u)*1.6);min-height:0}
+.s2 .orb{--d:calc(var(--u)*19)}
+.ami{align-self:stretch;padding:calc(var(--u)*1.3) calc(var(--u)*1.6);display:grid;gap:calc(var(--u)*1.1)}
+.ami__top{display:flex;justify-content:space-between;align-items:center;gap:1em}
+.ami__diagram{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:calc(var(--u)*1.2)}
+.ami__node{display:grid;justify-items:center;gap:.25em;font-size:calc(var(--u)*.8);color:var(--mist)}
+.ami__node .ms{font-size:calc(var(--u)*1.9);color:var(--ice)}
+.ami__lanes{display:grid;gap:calc(var(--u)*.9)}
+.lane{position:relative;padding-top:calc(var(--u)*1.3);transition:opacity .4s}
+.lane::before{content:"";display:block;height:1px;background:var(--line-2)}
+.lane em{position:absolute;top:0;left:0;font-style:normal;font-size:calc(var(--u)*.78);color:var(--mist);white-space:nowrap}
+.lane--down em{left:auto;right:0}
+.lane i{position:absolute;top:calc(var(--u)*1.3 - 3px);left:0;width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);animation:travel 2.7s linear infinite}
+.lane i:nth-of-type(2){animation-delay:-.9s}.lane i:nth-of-type(3){animation-delay:-1.8s}
+.lane--down i{background:var(--luz);box-shadow:0 0 10px var(--luz);animation-name:travelBack;animation-duration:3.3s}
+@keyframes travel{from{left:0}to{left:calc(100% - 7px)}}
+@keyframes travelBack{from{left:calc(100% - 7px)}to{left:0}}
+.ami[data-mode="amr"] .lane--down{opacity:.16}
+.ami[data-mode="amr"] .lane--down i{display:none}
+.slide:not(.is-active) .lane i{animation-play-state:paused}
+.ami__caption{font-size:calc(var(--u)*.88);color:var(--mist);min-height:2.7em}
+.foot{font-size:calc(var(--u)*.98);color:var(--mist)}
+.foot strong{color:var(--ice);font-weight:700}

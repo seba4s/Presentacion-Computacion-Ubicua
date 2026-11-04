@@ -1,0 +1,5 @@
+/* Letra e íconos locales: la presentación no necesita internet. */
+@font-face{font-family:"Exo 2";font-style:normal;font-weight:300 800;font-display:swap;src:url("../assets/fuentes/exo2.woff2") format("woff2")}
+@font-face{font-family:"Exo 2";font-style:italic;font-weight:300 800;font-display:swap;src:url("../assets/fuentes/exo2-cursiva.woff2") format("woff2")}
+/* Subconjunto con solo los íconos que se usan. Un ícono nuevo exige descargar otra vez este archivo desde Google Fonts. */
+@font-face{font-family:"Material Symbols Rounded";font-style:normal;font-weight:400;font-display:block;src:url("../assets/fuentes/material-symbols-rounded.woff2") format("woff2")}

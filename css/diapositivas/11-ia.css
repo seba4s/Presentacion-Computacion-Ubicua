@@ -1,0 +1,24 @@
+/* ---------- 11 · IA ---------- */
+.s11__grid{flex:1;display:grid;grid-template-columns:1fr calc(var(--u)*30);gap:calc(var(--u)*3.6);min-height:0}
+.anom{--cut:calc(var(--u)*1.5);padding:calc(var(--u)*1.3) calc(var(--u)*1.6) calc(var(--u)*1);display:grid;grid-template-rows:auto 1fr;gap:calc(var(--u)*.6);min-height:0}
+.anom__top{display:flex;justify-content:space-between;align-items:flex-start;gap:calc(var(--u)*1.5)}
+.anom svg{width:100%;height:100%;min-height:0;display:block;overflow:visible}
+.anom text{font-family:var(--font);font-size:11px;fill:var(--dim)}
+.anom .grid line{stroke:rgba(122,163,255,.14)}
+.anom .days line{stroke:rgba(122,163,255,.1)}
+.anom .wline{fill:none;stroke:var(--cyan);stroke-width:1.8;stroke-linejoin:round;filter:drop-shadow(0 0 4px rgba(46,219,255,.55))}
+.anom .warea{fill:url(#sigFill)}
+.anom .flag{opacity:0;transition:opacity .6s}
+.anom .flag rect{fill:rgba(255,79,110,.12);stroke:rgba(255,79,110,.7);stroke-dasharray:3 4}
+.anom .flag text{fill:var(--alert);font-weight:700;font-size:12px}
+.anom.is-on .flag{opacity:1}
+.s11__side{display:flex;flex-direction:column;align-items:center;gap:calc(var(--u)*1.3);min-height:0}
+.s11 .orb{--d:calc(var(--u)*11.5);margin-top:calc(var(--u)*.6)}
+.ai-list{align-self:stretch;display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*1.1) calc(var(--u)*1.4);align-content:start}
+.ai{display:grid;grid-template-columns:auto 1fr;column-gap:calc(var(--u)*.8);align-items:start}
+.ai .ico{grid-row:span 2;width:calc(var(--u)*2.4);height:calc(var(--u)*2.4);font-size:calc(var(--u)*1.02)}
+.ai strong{font-weight:700;font-size:calc(var(--u)*.96);line-height:1.25}
+.ai > span:last-child{font-size:calc(var(--u)*.8);color:var(--mist);line-height:1.32}
+.banner{--cut:calc(var(--u)*1.2);display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*2.4);padding:calc(var(--u)*1.15) calc(var(--u)*1.8);--frame:linear-gradient(135deg,var(--cyan),rgba(46,219,255,.25) 40%,rgba(122,163,255,.2) 70%,var(--cyan));background:linear-gradient(90deg,rgba(47,107,255,.3),rgba(47,107,255,.08))}
+.banner p{font-size:calc(var(--u)*.98);line-height:1.4;position:relative;z-index:1}
+.banner strong{font-weight:700;color:var(--cyan)}

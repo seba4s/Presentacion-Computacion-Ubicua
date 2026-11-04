@@ -1,0 +1,15 @@
+/* ---------- 10 · Comparativo ---------- */
+.cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u)*2.2);margin-block:auto}
+.col{position:relative;padding-top:calc(var(--u)*3.6);display:flex;flex-direction:column}
+.col__obj{position:absolute;z-index:3;left:calc(var(--u)*1.6);top:0;width:calc(var(--u)*5.4);transform:translate3d(0,calc(var(--p) * -5vh),0)}
+.col__card{flex:1;--cut:calc(var(--u)*1.5);--frame:linear-gradient(135deg,var(--c),color-mix(in oklab,var(--c) 22%,transparent) 32%,rgba(122,163,255,.18) 70%,color-mix(in oklab,var(--c) 80%,transparent));padding:calc(var(--u)*1.6) calc(var(--u)*1.9) calc(var(--u)*1.7);display:flex;flex-direction:column;gap:calc(var(--u)*1.3)}
+.col__head{padding-left:calc(var(--u)*6.4);min-height:calc(var(--u)*3.4);display:flex;align-items:flex-end}
+.col h3{font-weight:800;font-size:calc(var(--u)*2.4);line-height:1}
+.col h3 small{display:block;font-size:calc(var(--u)*.84);color:var(--c);font-weight:700;margin-top:.4em}
+.col dl{display:flex;flex-direction:column;gap:calc(var(--u)*1)}
+.col dt{font-size:calc(var(--u)*.78);color:var(--mist);font-weight:600}
+.col dd{font-size:calc(var(--u)*1.02);line-height:1.35}
+.col .star{margin-top:auto;padding-top:calc(var(--u)*1);border-top:1px solid var(--line)}
+.col .star dd{color:var(--c);font-weight:700}
+.idea{display:flex;align-items:center;gap:calc(var(--u)*1.1);font-size:calc(var(--u)*1.1)}
+.idea strong{font-weight:700}

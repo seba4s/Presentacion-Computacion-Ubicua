@@ -1,0 +1,8 @@
+/* ---------- Modo «sin animaciones» ----------
+   Lo activa quien presenta con la tecla A o el botón de la barra inferior (ver js/nucleo.js).
+   No se usa prefers-reduced-motion: Windows lo activa cuando los efectos visuales están
+   apagados por rendimiento, y eso dejaba la presentación sin ninguna animación. */
+.sin-animaciones :is(.slide__bg,.stage,.terrain,.orb,.sat,.s6__obj,.s7__obj,.col__obj,.s13__obj){transform:none!important}
+.sin-animaciones .slide::after{display:none}
+.sin-animaciones .stage{opacity:1!important}
+.sin-animaciones :is(.orb__arc,.orb__dash,.pop img,.obj,.lane i,.pk,.hero__hint .ms){animation:none!important}
