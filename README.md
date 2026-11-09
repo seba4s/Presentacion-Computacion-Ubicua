@@ -16,7 +16,6 @@ Está probada en Chrome. Cada movimiento de la rueda del mouse pasa a la diaposi
 | Acción | Cómo |
 | --- | --- |
 | Siguiente o anterior | Rueda del mouse, flechas o barra espaciadora |
-| Notas del orador | Tecla `N` |
 | Índice de diapositivas | Tecla `I` |
 | Pantalla completa | Tecla `F` |
 | Quitar o devolver las animaciones | Tecla `A` |
@@ -27,19 +26,19 @@ En el celular las diapositivas se recorren deslizando hacia arriba.
 ## Cómo está organizado
 
 ```text
-index.html                 Estructura y texto de las 15 diapositivas, con sus notas
+index.html                 Estructura y texto de las 15 diapositivas,
 css/
   estilos.css              Punto de entrada: importa los demás en orden
   fuentes.css              Letra e íconos locales
   base.css                 Colores, reinicio y tipografía
   componentes.css          Piezas compartidas: marcos, botones, objetos 3D
-  interfaz.css             Barra inferior, notas e índice
+  interfaz.css             Barra inferior e índice
   diapositivas/            Un archivo por diapositiva
   responsive.css           Ventanas angostas y celular
   movimiento.css           Modo sin animaciones
 js/
   nucleo.js                Estado y utilidades compartidas
-  interfaz.js              Barra inferior, notas, índice y botones
+  interfaz.js              Barra inferior, índice y botones
   navegacion.js            Transiciones, parallax, rueda y teclado
   diapositivas/            Lo interactivo de cada diapositiva
   arranque.js              Inicia la presentación

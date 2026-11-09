@@ -24,7 +24,6 @@
     const s = slides[i];
     slides.forEach((el, k) => el.classList.toggle("is-active", k === i));
     Deck.ui.markRail(i);
-    Deck.ui.renderNotes();
     Deck.ui.markIndex(i);
     hook(s.id).start?.();
     try { history.replaceState(null, "", "#" + s.id); } catch (e) {}
@@ -123,11 +122,9 @@
       case "ArrowUp": case "ArrowLeft": case "PageUp": e.preventDefault(); go(Deck.index - 1); break;
       case "Home": e.preventDefault(); go(0); break;
       case "End": e.preventDefault(); go(N - 1); break;
-      case "n": case "N": Deck.ui.toggleNotes(); break;
       case "i": case "I": Deck.ui.openIndex(); break;
       case "f": case "F": Deck.ui.toggleFull(); break;
       case "a": case "A": Deck.ui.toggleAnimaciones(); break;
-      case "Escape": Deck.ui.toggleNotes(false); break;
     }
   });
 

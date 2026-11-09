@@ -37,11 +37,6 @@
       <li class="cham hud"><span class="n">3</span><strong>Inteligencia, un proyecto real y retos</strong></li>
     </ol>
   </div>
-  <aside class="notes">
-    <p>«Buenos días. Durante el semestre vimos el modelo OSI, TCP/IP, los medios de transmisión, LoRa, la IA, la Industria 4.0, FinTech y salud. Hoy queremos unir todo eso en algo que usamos cada día sin pensarlo: el agua, la luz y el gas.»</p>
-    <p>«Les pregunto: ¿quién ha visto al lector de EMPOPASTO o de CEDENAR pasar casa por casa anotando el contador? Esa escena es justo la que el Internet de las Cosas está cambiando.»</p>
-    <p>«Vamos en tres bloques: primero cómo funciona la tecnología, luego cómo están Colombia y Nariño en cada servicio, y al final qué aporta la inteligencia artificial, un proyecto real que proponemos como referencia y los retos.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 2 · CONCEPTOS ===================== -->
@@ -85,10 +80,6 @@
     </div>
     <p class="foot" data-reveal><strong>SCADA:</strong> el tablero de mando que supervisa y controla la red desde el centro de control.</p>
   </div>
-  <aside class="notes">
-    <p>«Tres palabras que vamos a usar todo el tiempo. Telemetría es medir la red a distancia: por ejemplo, un tanque de agua que reporta su nivel cada cinco minutos. Telemedida es leer a distancia lo que consume cada casa, para cobrar lo real y no un estimado. Y telecontrol es actuar sin ir al sitio: reconectar la luz sin mandar una camioneta.»</p>
-    <p>«La diferencia entre AMR y AMI es clave: el AMR solo lee, en un sentido; el AMI conversa en los dos sentidos: el medidor envía datos y también recibe órdenes, como un corte, una reconexión o una actualización. Todo esto se integra con SCADA, que es el tablero de mando de la empresa de servicios.» (Toquen AMR y AMI en la diapositiva para mostrar la diferencia.)</p>
-  </aside>
 </section>
 
 <!-- ===================== 3 · OSI Y TCP/IP ===================== -->
@@ -128,11 +119,6 @@
       </div>
     </div>
   </div>
-  <aside class="notes">
-    <p>«Un sistema IoT tiene cuatro capas: los sensores y medidores que perciben, la red que transporta, la plataforma que procesa y la aplicación que muestra y actúa.»</p>
-    <p>«Ahora sigamos una lectura real por el modelo OSI que ya expusimos. El medidor mide 12,4 metros cúbicos. En la capa física sale como una señal de radio LoRa. En enlace la empaqueta el protocolo LoRaWAN. Aquí hay un detalle importante: el medidor no habla IP, porque eso gastaría batería. Es el gateway el que recibe la trama y la pasa al mundo TCP/IP. De ahí en adelante viaja como cualquier dato de internet: IP en red, TCP o UDP en transporte y, en aplicación, protocolos como MQTT.»</p>
-    <p>«Por eso decimos que el IoT no reemplaza lo que vimos en el curso: lo usa capa por capa.» (El botón «Enviar otra lectura» repite el recorrido; también pueden tocar cada capa.)</p>
-  </aside>
 </section>
 
 <!-- ===================== 4 · MEDIOS ===================== -->
@@ -168,11 +154,6 @@
       </div>
     </div>
   </div>
-  <aside class="notes">
-    <p>«No hay una sola red ideal: depende del servicio. Aquí retomamos medios de transmisión y señales.»</p>
-    <p>«El medidor de luz tiene energía todo el tiempo, entonces puede hablar por el propio cable eléctrico, eso es PLC, o por una malla de radio. Pero el medidor de agua o de gas no tiene enchufe: vive en una cajilla, a veces bajo tierra, con una batería que debe durar años. Para eso están las redes LPWAN como LoRaWAN, que vimos en la exposición del proyecto LoRa, y NB-IoT, que usa la red de los operadores celulares.»</p>
-    <p>«LoRa usa frecuencias bajas, alrededor de 915 megahercios: viajan lejos y atraviesan paredes. En Pasto eso importa mucho, porque estamos en un valle rodeado de montañas: los gateways deben ir en puntos altos para tener línea de vista con los barrios y las veredas.» (Toquen cada tecnología para comparar su alcance.)</p>
-  </aside>
 </section>
 
 <!-- ===================== 5 · WAN ===================== -->
@@ -209,12 +190,6 @@
     </div>
     <p class="secure" data-reveal><img class="obj" src="assets/objetos-3d/escudo.png" width="666" height="816" decoding="async" alt="" style="--dl:-2s"><span><strong>Todo va cifrado:</strong> LoRaWAN usa AES-128 con dos llaves (red y aplicación), TLS hacia la nube y VPN separadas en MPLS.</span></p>
   </div>
-  <aside class="notes">
-    <p>«Cuando el dato sale del gateway tiene que llegar a la empresa. Las empresas de servicios tienen su propia red de área amplia que une plantas, subestaciones y el centro de control.»</p>
-    <p>«Hace veinte años esa red era muchas veces Frame Relay, con circuitos virtuales fijos entre sedes, como vimos en esa exposición. Hoy la tecnología es MPLS: los paquetes se conmutan por etiquetas, se pueden separar en redes privadas virtuales y se le da prioridad a lo crítico. Una orden de cerrar una válvula no puede esperar detrás de diez mil lecturas de consumo.» (Toquen «Enviar una orden de corte».)</p>
-    <p>«Arriba de todo, los datos se mueven con protocolos livianos como MQTT, en el que el medidor publica y la plataforma se suscribe. Y todo va cifrado: en LoRaWAN, con AES de 128 bits y llaves separadas, el operador de la red ni siquiera puede leer el contenido de la aplicación.»</p>
-    <p class="tr">Transición: «Ya con la tecnología clara, veamos cómo se aplica a la luz, el agua y el gas en Colombia y en Nariño.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 6 · NORMA ===================== -->
@@ -256,11 +231,6 @@
     </div>
     <p class="src" data-reveal>Fuentes: Res. MinEnergía 40072 de 2018 y 40483 de 2019; Ley 2099 de 2021; Res. CREG 101 001 de 2022; Res. SIC 40972 de 2025; Res. CRA 12 de 1995; avance: Asocodis, citado por Portafolio y una tesis de la U. del Rosario (2024).</p>
   </div>
-  <aside class="notes">
-    <p>«Esto no es ciencia ficción: en Colombia ya hay norma. El Ministerio de Energía fijó que para 2030 el 75 % de los usuarios debería tener medición inteligente. Esa medición debe registrar el consumo en intervalos de máximo una hora y transmitirlo por lo menos una vez al día.»</p>
-    <p>«La CREG, en 2022, dijo cómo hacerlo: cada operador debe presentar un plan de despliegue, un estudio de costo-beneficio e informar a los usuarios con tres meses de anticipación antes de cambiar el medidor. Y en 2025 la SIC sacó los requisitos que deben cumplir los nuevos medidores. En agua, la CRA mide las pérdidas con el índice de agua no contabilizada.»</p>
-    <p>«El problema es la brecha: en 2024, el gremio Asocodis calculaba unos 200.000 medidores instalados, cerca del 1 % de los hogares, y advertía que la meta no se va a cumplir. Hay meta, hay norma, pero falta despliegue, y ahí está la oportunidad.» (Toquen cada año de la línea de tiempo.)</p>
-  </aside>
 </section>
 
 <!-- ===================== 7 · LUZ ===================== -->
@@ -300,11 +270,6 @@
     </div>
     <p class="src" data-reveal>Fuentes: Superservicios, evaluación integral de CEDENAR 2019 (datos de 2018); DNP, 2025; Blu Radio, 2024; Universidad de Nariño. El balance de la cuadra es un ejemplo ilustrativo.</p>
   </div>
-  <aside class="notes">
-    <p>«En energía es donde más ha avanzado la medición inteligente. Un medidor AMI no solo lee: avisa cuando se va la luz, permite reconectar sin desplazarse y deja ver el consumo hora a hora.»</p>
-    <p>«Un uso muy potente es el balance de energía: se mide lo que sale del transformador y se compara con la suma de las casas; si no cuadra, hay una pérdida o una conexión ilegal, y se sabe en qué cuadra buscar.» (Toquen «Simular conexión ilegal».)</p>
-    <p>«En Nariño el operador es CEDENAR, que atendía 432.490 usuarios en 2018. Nuestro reto es geográfico: según el DNP, 34 de los 64 municipios tienen cobertura por debajo del promedio nacional, y en la costa pacífica ha habido municipios más de una semana sin energía. Con telemetría en la red, la falla se ubica antes de mandar la cuadrilla. Y el conocimiento ya está en la región: la Universidad de Nariño construyó su propio prototipo de medidor inteligente.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 8 · AGUA ===================== -->
@@ -348,11 +313,6 @@
     </div>
     <p class="src" data-reveal>Fuentes: Value and Risk Rating vía HSB Noticias (2025); Semana (2017); MinVivienda vía Portafolio; CRA, Res. 12 de 1995; revista DYNA, U. Nacional (agua no contabilizada en ciudades intermedias).</p>
   </div>
-  <aside class="notes">
-    <p>«En agua la telemetría acompaña todo el recorrido. En la fuente se mide el caudal del río y la lluvia; en la planta, la calidad: turbiedad, cloro, pH; en los tanques, el nivel; y en la red, la presión y el caudal por sectores.»</p>
-    <p>«El gran enemigo es el agua no contabilizada: agua que se trató y se bombeó, pero nunca se cobró, porque se fugó o porque un medidor viejo mide de menos. En ciudades intermedias puede rondar el 41 %. Hay un truco muy usado: a las tres de la mañana casi nadie abre una llave, así que si un sector sigue consumiendo mucho a esa hora, hay una fuga.» (Toquen «Con fuga».)</p>
-    <p>«En Pasto, EMPOPASTO tiene muy buenos indicadores de calidad, con un IRCA de 0,19 % y continuidad de 99,75 %, y adelanta estaciones hidrológicas en sus fuentes, con seguimiento por satélite previsto. El siguiente paso es llevar la medición inteligente a la red y a las casas. Y en el resto del departamento, donde la cobertura es del 76 %, la telemetría barata puede ayudar a los acueductos veredales.» Dato extra: EPM ya tiene agua prepago, y en 2026 anunció un piloto de medidores inteligentes, AMI Aguas, en Medellín.</p>
-  </aside>
 </section>
 
 <!-- ===================== 9 · GAS ===================== -->
@@ -408,11 +368,6 @@
     </div>
     <p class="src" data-reveal>Municipios con GLP por redes o proyectos en curso: Catambuco, El Tambo, Buesaco, Cumbal, Ipiales y otros; meta de la Gobernación 2020-2023: 25 % de hogares con gas por redes. Fuentes: Alcanos vía Portafolio (2023); HSB Noticias y Diario del Sur (2025); Gobernación de Nariño; CREG.</p>
   </div>
-  <aside class="notes">
-    <p>«El gas tiene un caso que hace a Pasto especial. Aquí no llega el gasoducto nacional. Alcanos toma el gas en Popayán, lo comprime, lo trae por carretera y lo descomprime en estaciones en la ciudad para más de 55.000 hogares. Eso se llama gasoducto virtual.»</p>
-    <p>«¿Cuál es el problema? Que dependemos de la Panamericana: un derrumbe y el gas no llega, y eso ya ha pasado: en enero de 2023 hubo racionamiento y en marzo de 2025 volvió a faltar. Aquí el IoT deja de ser un lujo: con sensores de presión y volumen en cada estación y GPS en los carrotanques, la empresa puede saber con horas o días de anticipación cuándo se va a quedar sin inventario y activar un plan.» (Toquen «Simular cierre de la vía».)</p>
-    <p>«En los municipios se usa gas propano por redes, y ahí un sensor de nivel en el tanque permite reabastecer según el consumo real y no por calendario. Y en todos los casos está la seguridad: un detector de fuga conectado puede cerrar la válvula automáticamente y avisar al usuario y a la empresa.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 10 · COMPARATIVO ===================== -->
@@ -465,11 +420,6 @@
     </div>
     <p class="idea" data-reveal><span class="ico"><span class="ms" aria-hidden="true">battery_full</span></span><span><strong>Idea fuerza:</strong> el medidor de luz tiene energía; los de agua y gas no. Por eso usan redes de bajo consumo a batería.</span></p>
   </div>
-  <aside class="notes">
-    <p>«Para resumir el bloque, comparemos. Los tres servicios miden cosas distintas, pero la arquitectura es la misma: sensor, red, plataforma y aplicación.»</p>
-    <p>«La gran diferencia técnica es la energía: el medidor de luz está conectado a la red eléctrica, entonces puede usar el propio cable; los de agua y gas dependen de una batería y necesitan redes de muy bajo consumo como LoRaWAN o NB-IoT. Y cada uno tiene su reto local: la geografía para la luz, las cajillas bajo tierra para el agua y la Panamericana para el gas.»</p>
-    <p class="tr">Transición: «Tener datos no basta: hay que convertirlos en decisiones. Veamos qué aporta la inteligencia artificial.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 11 · IA ===================== -->
@@ -507,11 +457,6 @@
       <p><strong>La IA es tan buena como sus datos.</strong> Primero la red confiable, después la inteligencia.</p>
     </div>
   </div>
-  <aside class="notes">
-    <p>«Como vimos en la exposición de la IA como factor clave del IoT, el valor no está en el sensor sino en lo que se hace con sus datos.»</p>
-    <p>«Con lecturas cada hora, un modelo puede pronosticar la demanda de mañana y la empresa decide cuánta agua bombear o cuánta energía comprar. Otro uso es detectar anomalías: un modelo aprende cómo consume normalmente cada casa y, si de pronto el consumo cae a cero pero la casa sigue habitada, puede ser fraude o un medidor dañado; si sube de madrugada, puede ser una fuga.» (Toquen «Detectar anomalías».)</p>
-    <p>«En las bombas y transformadores, sensores de vibración y temperatura permiten mantenimiento predictivo: se cambia la pieza antes de que falle. Todo esto es Industria 4.0 aplicada a los servicios públicos. Un aviso importante: la IA es tan buena como sus datos. Si la telemetría falla o los datos llegan incompletos, el modelo se equivoca. Por eso primero va la red y después la inteligencia.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 12 · CONEXIONES ===================== -->
@@ -537,11 +482,6 @@
     </div>
     <p class="hub-cap" data-reveal>Esa es la idea de la computación ubicua: una infraestructura que muchos servicios comparten.</p>
   </div>
-  <aside class="notes">
-    <p>«Esta diapositiva conecta nuestra exposición con las de nuestros compañeros de curso.»</p>
-    <p>«Con FinTech: EPM ya ofrece agua y energía prepago, que solo funciona bien con medidores que se comunican; además, el consumo real permite facturas exactas y pagos digitales. Con salud: la calidad del agua es salud pública; si el cloro residual baja en un tanque, una alerta en línea permite corregir antes de que haya un problema sanitario.»</p>
-    <p>«Con agricultura inteligente: Nariño es un departamento agrícola, y la misma red LoRa que lee un medidor de agua en una vereda puede llevar datos de humedad del suelo o de riego. Esa es la idea de computación ubicua: una infraestructura que muchos servicios comparten.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 13 · PROPUESTA ===================== -->
@@ -590,12 +530,6 @@
     </div>
     <p class="src" data-reveal>Fuentes: Acueducto de Bogotá, boletines de octubre de 2022 y noviembre de 2023; Alcaldía de Bogotá; Watertech (2024); Minuto30 (AMI Aguas, 2026).</p>
   </div>
-  <aside class="notes">
-    <p>«En vez de inventar un piloto, les proponemos partir de un proyecto que ya existe en Colombia: MIA, la Medición Inteligente de Agua del Acueducto de Bogotá, que arrancó en octubre de 2022.»</p>
-    <p>«Sigámoslo por las cuatro capas que vimos. Percepción: un medidor ultrasónico con módem incorporado, que registra la lectura cada 30 minutos, o sea 48 lecturas al día. Red: transmite por la red celular, con un plan de datos incluido en el proyecto. Procesamiento: una plataforma con inteligencia artificial que desarrollaron ingenieros del propio Acueducto. Aplicación: el cliente ve sus curvas de consumo y recibe alarmas en el celular o el correo, por ejemplo cuando hay una fuga interna.» (Toquen cada capa en la diapositiva.)</p>
-    <p>«La primera etapa contempla 905 clientes industriales, comerciales, de servicios y del sector oficial, los mayores consumidores de Bogotá y Soacha, con una inversión de 6.768 millones de pesos. En noviembre de 2023 ya iban 415 organizaciones y, según Watertech, a mediados de 2024 eran más de 900 usuarios.»</p>
-    <p>«¿Qué tomaríamos para Pasto? Empezar por los mayores consumidores en lugar de ir casa por casa, y darle al cliente sus datos y sus alarmas. Una diferencia con lo que vimos: MIA usa red celular, no LoRa; donde hay buena señal eso sirve, y donde no llega, en cajillas o veredas, entraría LoRaWAN. Y no es el único caso: EPM anunció en 2026 AMI Aguas, un piloto residencial en los barrios Fátima y Nutibara de Medellín.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 14 · RETOS ===================== -->
@@ -626,11 +560,6 @@
       </div>
     </div>
   </div>
-  <aside class="notes">
-    <p>«No queremos venderles una tecnología perfecta. Tiene retos reales.»</p>
-    <p>«El primero es el costo: en 2022, con la sentencia C-186, la Corte Constitucional tumbó la prohibición de cobrar los medidores a los usuarios, pero en 2024 aún no había una regla clara de cuánto paga cada quien; además, la CREG exige un estudio de costo-beneficio. Ese costo genera desconfianza: mucha gente piensa que el medidor inteligente es para cobrar más, cuando en realidad le permite al usuario ver su consumo y reclamar si hay un error.»</p>
-    <p>«El segundo es la privacidad: con datos cada hora se puede saber a qué hora sale uno de la casa; por eso aplica la Ley 1581 de protección de datos. El tercero es la ciberseguridad: si alguien tomara el control, podría cortar miles de servicios, y por eso se cifra todo y se autentica cada orden. Y en Nariño están la geografía y las zonas rurales, donde LoRa y los gateways solares son la mejor opción.»</p>
-  </aside>
 </section>
 
 <!-- ===================== 15 · CIERRE ===================== -->
@@ -667,10 +596,6 @@
       </div>
     </div>
   </div>
-  <aside class="notes">
-    <p>«Para cerrar, cinco ideas. Primero, el IoT en servicios públicos usa todo lo que vimos en el semestre. Segundo, en Colombia ya hay norma y meta, pero el despliegue va muy atrás. Tercero, no hay una red única: la luz puede hablar por el cable, el agua y el gas necesitan redes de bajo consumo. Cuarto, Pasto tiene un caso muy particular con el gas, donde la telemetría ayuda a no quedarnos sin servicio. Y quinto, la inteligencia artificial solo sirve si la red entrega datos confiables.»</p>
-    <p>«Muchas gracias; con gusto respondemos sus preguntas.» El banco de 24 preguntas con respuestas está en el documento del guion.</p>
-  </aside>
 </section>
 
 <!-- /SLIDES -->
@@ -678,11 +603,9 @@
 
 <div class="chrome">
   <nav class="rail" aria-label="Progreso de la presentación">
-    <div class="rail__ticks"></div>
     <span class="counter" aria-live="polite"><b>01</b> / 15</span>
     <div class="tools">
       <span class="tip-out" aria-hidden="true"></span>
-      <button type="button" class="tool cham js-notes" aria-pressed="false" aria-label="Notas del orador (N)" data-tip="Notas del orador (N)"><span class="ms" aria-hidden="true">speaker_notes</span></button>
       <button type="button" class="tool cham js-index" aria-label="Índice de diapositivas (I)" data-tip="Índice (I)"><span class="ms" aria-hidden="true">grid_view</span></button>
       <button type="button" class="tool cham js-anim" aria-pressed="false" aria-label="Sin animaciones (A)" data-tip="Sin animaciones (A)"><span class="ms" aria-hidden="true">animation</span></button>
       <button type="button" class="tool cham js-full" aria-label="Pantalla completa (F)" data-tip="Pantalla completa (F)"><span class="ms js-full-ico" aria-hidden="true" data-icon="fullscreen_exit">fullscreen</span></button>
@@ -690,16 +613,11 @@
   </nav>
 </div>
 
-<aside class="notes-panel" aria-label="Notas del orador">
-  <div class="notes-panel__top"><h2 class="js-notes-title">Notas</h2><button type="button" class="tool cham js-notes-close" aria-label="Cerrar notas"><span class="ms" aria-hidden="true">close</span></button></div>
-  <div class="js-notes-body"></div>
-</aside>
-
 <dialog id="indice" aria-labelledby="indice-t">
   <div class="dlg">
     <div class="dlg__head"><h2 id="indice-t">Índice</h2><button type="button" class="tool cham" data-close aria-label="Cerrar índice"><span class="ms" aria-hidden="true">close</span></button></div>
     <div class="idx"></div>
-    <p class="keys"><span><kbd>↓</kbd><kbd>→</kbd>siguiente</span><span><kbd>↑</kbd><kbd>←</kbd>anterior</span><span><kbd>N</kbd>notas del orador</span><span><kbd>I</kbd>índice</span><span><kbd>F</kbd>pantalla completa</span><span><kbd>A</kbd>quitar o devolver animaciones</span><span><kbd>Inicio</kbd><kbd>Fin</kbd>primera y última</span></p>
+    <p class="keys"><span><kbd>↓</kbd><kbd>→</kbd>siguiente</span><span><kbd>↑</kbd><kbd>←</kbd>anterior</span><span><kbd>I</kbd>índice</span><span><kbd>F</kbd>pantalla completa</span><span><kbd>A</kbd>quitar o devolver animaciones</span><span><kbd>Inicio</kbd><kbd>Fin</kbd>primera y última</span></p>
   </div>
 </dialog>
 

@@ -49,7 +49,6 @@ ol,ul{padding:0;list-style:none}
   linear-gradient(180deg,#06123F 0%,#030A28 45%,#02061A 100%)}
 .aura::after{content:"";position:absolute;inset:0;opacity:.6;background-image:radial-gradient(rgba(122,163,255,.3) 1px,transparent 1.5px);background-size:calc(var(--u)*2.2) calc(var(--u)*2.2);-webkit-mask-image:radial-gradient(62% 72% at var(--ax,80%) var(--ay,30%),#000,transparent 78%);mask-image:radial-gradient(62% 72% at var(--ax,80%) var(--ay,30%),#000,transparent 78%)}
 .stage{position:absolute;left:50%;top:50%;width:calc(var(--u)*100);height:calc(var(--u)*56.25);translate:-50% -50%;padding:calc(var(--u)*4) calc(var(--u)*5) calc(var(--u)*5.6);display:flex;flex-direction:column;gap:calc(var(--u)*2.2);transform:translate3d(0,calc(var(--p) * 7vh),0);opacity:calc(1 - var(--pa) * .8);will-change:transform,opacity}
-.notes{display:none}
 
 /* ---------- Tipografía ---------- */
 .head{position:relative;z-index:3}

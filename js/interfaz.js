@@ -1,20 +1,9 @@
-/* Barra inferior, notas del orador, índice, pantalla completa y botón de animaciones. */
+/* Contador, índice, pantalla completa y botón de animaciones. */
 (() => {
   "use strict";
   const { $, $$, slides, N, hook, reduced, setReduced } = Deck;
 
-  /* ---------- Barra de progreso ---------- */
-  const ticksBox = $(".rail__ticks");
-  const ticks = [];
-  slides.forEach((s, i) => {
-    const b = document.createElement("button");
-    b.type = "button"; b.className = "tick";
-    if (i && s.dataset.part !== slides[i - 1].dataset.part) b.classList.add("gap");
-    b.dataset.tip = `${i + 1}. ${s.dataset.title}`;
-    b.setAttribute("aria-label", `Ir a la diapositiva ${i + 1}: ${s.dataset.title}`);
-    b.addEventListener("click", () => Deck.go(i));
-    ticks[i] = b; ticksBox.appendChild(b);
-  });
+  /* ---------- Contador ---------- */
   const counter = $(".counter");
   const tipOut = $(".tip-out");
   $$(".tools .tool").forEach((t) => {
@@ -25,25 +14,8 @@
     t.addEventListener("blur", () => show(false));
   });
   function markRail(i) {
-    ticks.forEach((t, k) => { t.classList.toggle("is-current", k === i); t.classList.toggle("is-past", k < i); t.setAttribute("aria-current", k === i ? "step" : "false"); });
     counter.innerHTML = `<b>${String(i + 1).padStart(2, "0")}</b> / ${N}`;
   }
-
-  /* ---------- Notas del orador ---------- */
-  const notesPanel = $(".notes-panel"), notesBtn = $(".js-notes");
-  function renderNotes() {
-    const s = slides[Deck.index];
-    $(".js-notes-title").textContent = `Notas · ${Deck.index + 1}. ${s.dataset.title}`;
-    const src = $(".notes", s);
-    $(".js-notes-body").innerHTML = src ? src.innerHTML : "<p>Sin notas para esta diapositiva.</p>";
-  }
-  function toggleNotes(force) {
-    const open = typeof force === "boolean" ? force : !notesPanel.classList.contains("is-open");
-    notesPanel.classList.toggle("is-open", open);
-    notesBtn.setAttribute("aria-pressed", String(open));
-  }
-  notesBtn.addEventListener("click", () => toggleNotes());
-  $(".js-notes-close").addEventListener("click", () => toggleNotes(false));
 
   /* ---------- Índice ---------- */
   const idxDlg = $("#indice"), idxBox = $(".idx", idxDlg);
@@ -90,5 +62,5 @@
   animBtn.addEventListener("click", toggleAnimaciones);
   markAnim();
 
-  Deck.ui = { markRail, renderNotes, toggleNotes, openIndex, markIndex, toggleFull, toggleAnimaciones };
+  Deck.ui = { markRail, openIndex, markIndex, toggleFull, toggleAnimaciones };
 })();
